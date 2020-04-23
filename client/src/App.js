@@ -6,7 +6,9 @@ import characters from "./characters.json";
 class App extends Component {
 
   state = {
-    characters
+    characters,
+    score:0,
+    highScore:0
   };
 
     componentDidMount(){
@@ -14,17 +16,28 @@ class App extends Component {
         console.log(this.state.characters[i])
       }
     }
-  // shuffleFriend = idArray => {
-  //   //on img click, save data and change image 
-    
-  //   const characters = this.state.characters.filter(characters => characters.id !== id);
-  //   // Set this.state.friends equal to the new friends array
-  //   this.setState({ characters });
-  // };
+
 
   handleClick = e => {
     console.log(e)
-    console.log("clicking: " + this)
+    var friendCheck =this.state.characters
+    for(i=0;i<friendCheck.length;i++){
+      if(e===friendCheck[i].id){
+        //loss check
+        if(friendCheck[i].clicked === true){
+          //logic for loss here
+          //run reset of all the friendCheck[i].clicked to false
+
+        }else{//win condition
+          //change the value of friendCheck[i].clicked to true
+          //follow logic for incrementing score
+          //set State with friendCheck array
+          this.setState({characters:friendCheck})
+          
+        }
+      }
+    }
+
     this.fisherYatesShuffle()
   }
 
