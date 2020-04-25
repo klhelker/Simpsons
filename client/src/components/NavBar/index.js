@@ -1,13 +1,14 @@
 import React from "react";
 import "./style.css";
 
-const NavBar = () => (
+const NavBar = (props) => (
  <nav className="navbar navbar-sticky">
      <div className="navbar--logo-holder">
          <h1>Simpson's Memory Game</h1>
          </div>
     <ul className="navbar--link">
-        <li className="navbar--link-item">Click image to begin!</li>
+        <li>{props.message}</li>
+        <li>{props.score} || {props.score}</li>
         
     </ul>
  </nav>

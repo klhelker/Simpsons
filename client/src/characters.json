@@ -1,71 +1,76 @@
 [
     {
-      "id": 1,
+      "id": 0,
       "name": "Apu",
-      "image": "https://i.pinimg.com/474x/43/89/0b/43890b78016cb2b7ef2b72ae51906426.jpg"  
+      "image": "https://i.pinimg.com/474x/43/89/0b/43890b78016cb2b7ef2b72ae51906426.jpg",
+      "clicked": false
+    },
+    {
+      "id": 1,
+      "name": "Doc Hibbert",
+      "image": "https://i.pinimg.com/474x/d8/64/5c/d8645c0b50988c283f847510d4524c27.jpg",
+      "clicked": false
     },
     {
       "id": 2,
-      "name": "Doc Hibbert",
-      "image": "https://i.pinimg.com/474x/d8/64/5c/d8645c0b50988c283f847510d4524c27.jpg"
-      
+      "name": "Millhouse",
+      "image": "https://i.pinimg.com/474x/d5/e4/25/d5e425c7b0dd89c52f2d27743770d16a.jpg",   
+      "clicked": false
     },
     {
       "id": 3,
-      "name": "Millhouse",
-      "image": "https://i.pinimg.com/474x/d5/e4/25/d5e425c7b0dd89c52f2d27743770d16a.jpg"    
+      "name": "Grandpa",
+      "image": "https://i.pinimg.com/474x/e4/fd/71/e4fd71eefa04513e8889f8a079b7fe28.jpg",
+      "clicked": false
     },
     {
       "id": 4,
-      "name": "Grandpa",
-      "image": "https://i.pinimg.com/474x/e4/fd/71/e4fd71eefa04513e8889f8a079b7fe28.jpg"  
-      
+      "name": "Mr.Burns",
+      "image": "https://i.pinimg.com/474x/e2/ea/1c/e2ea1cda23c93f1d767618775a109f31.jpg",
+      "clicked": false    
     },
     {
       "id": 5,
-      "name": "Mr.Burns",
-      "image": "https://i.pinimg.com/474x/e2/ea/1c/e2ea1cda23c93f1d767618775a109f31.jpg"
-    
+      "name": "Ralph Wiggum",
+      "image": "https://i.pinimg.com/474x/30/a2/30/30a2304c3c1d6d3e5b69646ad55c2486.jpg",
+      "clicked": false
     },
     {
       "id": 6,
-      "name": "Ralph Wiggum",
-      "image": "https://i.pinimg.com/474x/30/a2/30/30a2304c3c1d6d3e5b69646ad55c2486.jpg"
-     
+      "name": "Krusty",
+      "image": "https://i.pinimg.com/474x/68/c6/1a/68c61a0d22ba7125512e73cb129977ae.jpg",
+      "clicked": false
     },
     {
       "id": 7,
-      "name": "Krusty",
-      "image": "https://i.pinimg.com/474x/68/c6/1a/68c61a0d22ba7125512e73cb129977ae.jpg"
-
+      "name": "Ned",
+      "image": "https://i.pinimg.com/474x/81/8b/06/818b06f4ed521183a135448414a47cc3.jpg",
+      "clicked": false
     },
     {
       "id": 8,
-      "name": "Ned",
-      "image": "https://i.pinimg.com/474x/81/8b/06/818b06f4ed521183a135448414a47cc3.jpg"
-     
+      "name": "Homer Simpson",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b7071ce3-5e2d-4114-bce3-9c2b0332419d/dahk1c8-cc1ed539-c243-43a1-aabe-0c72e430bd33.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I3MDcxY2UzLTVlMmQtNDExNC1iY2UzLTljMmIwMzMyNDE5ZFwvZGFoazFjOC1jYzFlZDUzOS1jMjQzLTQzYTEtYWFiZS0wYzcyZTQzMGJkMzMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ra8zRKyIptlBZ1tXuajXeBSn2rRSabgBX8hgzRKLzjg",
+      "clicked": false
     },
     {
       "id": 9,
-      "name": "Homer Simpson",
-      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b7071ce3-5e2d-4114-bce3-9c2b0332419d/dahk1c8-cc1ed539-c243-43a1-aabe-0c72e430bd33.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I3MDcxY2UzLTVlMmQtNDExNC1iY2UzLTljMmIwMzMyNDE5ZFwvZGFoazFjOC1jYzFlZDUzOS1jMjQzLTQzYTEtYWFiZS0wYzcyZTQzMGJkMzMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ra8zRKyIptlBZ1tXuajXeBSn2rRSabgBX8hgzRKLzjg"
-      
-    },
-    {
-      "id": 10,
       "name": "Maggie Simpson",
-      "image": "https://i.pinimg.com/474x/c8/5b/b9/c85bb958cfccea97f9bc5a993cff7e39.jpg"
+      "image": "https://i.pinimg.com/474x/c8/5b/b9/c85bb958cfccea97f9bc5a993cff7e39.jpg",
+      "clicked": false
     },
       {
 
-      "id": 11,
+      "id": 10,
       "name": "Marge",
-      "image": "https://i.pinimg.com/474x/bb/93/c3/bb93c34ae4bc097c08019f6f9e0f2f4f.jpg"
+      "image": "https://i.pinimg.com/474x/bb/93/c3/bb93c34ae4bc097c08019f6f9e0f2f4f.jpg",
+      "clicked": false
     },
     {
-      "id": 12,
+      "id": 11,
       "name": "Lisa Simpson",
-      "image": "https://i.pinimg.com/564x/23/10/37/23103793c616e7d8105ee74f53d143dd.jpg"
+      "image": "https://i.pinimg.com/564x/23/10/37/23103793c616e7d8105ee74f53d143dd.jpg",
+      "clicked": false
     }
   ]
   
