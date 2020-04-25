@@ -25,10 +25,22 @@ class App extends Component {
       if(e===friendCheck[i].id){
         //loss check
         if(friendCheck[i].clicked === true){
-          //logic for loss here
+          this.setState ({
+            score: 0,
+          }
+            resetState(){
+              return this.setState({friendCheck[i].clicked === false}})
+              };
+
+          )
           //run reset of all the friendCheck[i].clicked to false
 
-        }else{//win condition
+        })else//win condition
+        if(friendCheck[i].clicked === false){
+          this.setState ({
+            
+          })
+        }
           //change the value of friendCheck[i].clicked to true
           //follow logic for incrementing score
           //set State with friendCheck array
