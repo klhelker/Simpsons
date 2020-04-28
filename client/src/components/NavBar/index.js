@@ -6,11 +6,12 @@ const NavBar = (props) => (
      <div className="navbar--logo-holder">
          <h1>Simpson's Memory Game</h1>
          </div>
-    <ul className="navbar--link">
-        <li>{props.message}</li>
-        <li>{props.score} || {props.score}</li>
+    <div className="navbar--link col-4"></div>
+
+        <h2>{props.message}</h2>
+        <h3>{props.score} || {props.score}</h3>
         
-    </ul>
+    
  </nav>
 )
 

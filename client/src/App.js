@@ -38,36 +38,15 @@ class App extends Component {
           characters: characters,
           message: "Nice Work!"
        })
-       } else {
-      console.log("yeah")
-    }
-    // let friendCheck = this.state.characters
-    // for(let i=0;i<friendCheck.length;i++){
-    //   if(e===friendCheck[i].id){
-    //     //loss check
-    //     if(friendCheck[i].clicked === false){
-    //       this.setState ({
-    //         score: this.state.score +1,
-    //         characters: characters
-    //       })
-    //       // resetState(){
-    //           // this.setState({friendCheck[i].clicked === false})
-    //       //run reset of all the friendCheck[i].clicked to false
-
-    //     } else if (friendCheck[i].clicked === true){
-    //       this.setState ({
-            
-    //       })
-    //     }
-    //       //change the value of friendCheck[i].clicked to true
-    //       //follow logic for incrementing score
-    //       //set State with friendCheck array
-    //       this.setState({characters:friendCheck})
-          
-    //     }
-       
-  
-    console.log(id)
+       } else if (character.clicked === true) {
+        
+        this.setState({
+          score: 0,
+          characters,
+        })
+       }
+      
+    
     console.log(characters)
     this.fisherYatesShuffle()
   }
