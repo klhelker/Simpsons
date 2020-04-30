@@ -9,7 +9,7 @@ const NavBar = (props) => (
     <div className="navbar--link col-4"></div>
 
         <h2>{props.message}</h2>
-        <h3>{props.score} || {props.score}</h3>
+        <h3>{props.score} || {props.highScore}</h3>
         
     
  </nav>

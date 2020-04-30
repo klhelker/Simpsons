@@ -28,8 +28,6 @@ class App extends Component {
          if (character.id === id) {
            character.clicked = true
            console.log(id)
-          
-    // this.fisherYatesShuffle()
           }
            return character
          })
@@ -38,14 +36,41 @@ class App extends Component {
           characters: characters,
           message: "Nice Work!"
        })
-       } else if (character.clicked === true) {
-        
-        this.setState({
-          score: 0,
-          characters,
+       } else if (!clicked && this.state.score === 11) {
+        let characters = this.state.characters.map(character => {
+          character.clicked=false
+          return character
         })
+        this.setState({
+          characters: characters,
+          score: 0,
+          highScore: 0,
+          message: "Winner"
+        })
+       } else {
+         if(this.state.highScore < this.state.score){
+           let highScore = this.state.score
+           this.setState({
+             highScore: highScore,
+            })
+          }else {
+            this.setState({
+              highScore: this.state.highScore
+            })
+          } 
+          let characters = this.state.characters.map(character => {      
+            character.clicked = false 
+            return character
+    
+       }) 
+       this.setState({
+         characters: characters,
+         score: 0,
+         message: "Sorry, Try again!"
+
+
+       })
        }
-      
     
     console.log(characters)
     this.fisherYatesShuffle()
