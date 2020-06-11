@@ -20,7 +20,7 @@ class App extends Component {
 
 
   handleClick = (id, clicked) => {
-  
+    this.fisherYatesShuffle()
     console.log(this.state.characters[id].clicked)
     if (!clicked && this.state.score < 11) {
        let characters = this.state.characters.map(character => {
@@ -87,7 +87,6 @@ class App extends Component {
       characters[swapIndex] = currentCard
     }
     
-    this.setState({characters: characters})
   }
   
  render() {
